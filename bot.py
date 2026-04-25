@@ -46,7 +46,7 @@ if not all([TELEGRAM_TOKEN, GEMINI_API_KEY, ANTHROPIC_API_KEY]):
     )
 
 genai.configure(api_key=GEMINI_API_KEY)
-gemini_model = genai.GenerativeModel("gemini-2.0-flash")
+gemini_model = genai.GenerativeModel("gemini-2.0-flash-001")
 claude_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 CLAUDE_MODEL = "claude-sonnet-4-6"
 
